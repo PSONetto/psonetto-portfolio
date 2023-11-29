@@ -24,8 +24,7 @@ function getLocale(request) {
 export function middleware(request) {
   const pathname = request.nextUrl.pathname;
 
-  if (['/manifest.json', '/favicon.ico', '/assets'].includes(pathname))
-    return;
+  if (['/assets/screenshots/homework-lp.png'].includes(pathname)) return;
 
   // Check if there is any supported locale in the pathname
   const pathnameIsMissingLocale = i18n.locales.every(
