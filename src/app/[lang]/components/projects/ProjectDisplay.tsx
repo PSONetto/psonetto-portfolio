@@ -1,7 +1,6 @@
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
-import Image from 'next/image';
-
+import ProjectPreview from './ProjectPreview';
 import TechTag from './TechTag';
 
 export interface IProjectDisplayProps {
@@ -28,18 +27,9 @@ export default function ProjectDisplay({
         <FaExternalLinkAlt />
       </a>
 
-      <a href={path} target="_blank" className="shadow-lg w-full">
-        <Image
-          alt={name}
-          src={`/assets/screenshots/${name}.png`}
-          className="w-auto"
-          height={800}
-          width={1280}
-          sizes="(max-width: 768px) 80vw, 33vw"
-        />
-      </a>
+      <ProjectPreview name={name} path={path} />
 
-      <div className="flex flex-wrap items-center justify-center gap-2 ">
+      <div className="flex flex-wrap items-center justify-center gap-2">
         {techs.map((tech) => (
           <TechTag key={tech} name={tech} />
         ))}
