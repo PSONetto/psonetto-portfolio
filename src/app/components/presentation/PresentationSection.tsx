@@ -1,8 +1,46 @@
-import Separator from '@/components/separator/Separator';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+
+import Separator from '@/components/content/separator/Separator';
+
+import LinkTooltip from './LinkTooltip';
+import SocialMediaLink from './SocialMediaLink';
+
+export interface ISocialMediaLink {
+  icon: React.ReactNode;
+  path: string;
+  name: string;
+}
 
 export default function PresentationSection() {
+  const links: ISocialMediaLink[] = [
+    {
+      icon: <FaGithub />,
+      path: 'https://github.com/PSONetto/',
+      name: 'GitHub',
+    },
+    {
+      icon: <FaLinkedin />,
+      path: 'https://www.linkedin.com/in/plinio-netto/',
+      name: 'Linkedin',
+    },
+  ];
+
   return (
-    <section className="col-span-7 p-6">
+    <section className="md:col-span-7 md:p-12 p-6 h-full flex flex-col gap-28 bg-gradient-to-tr from-black to-gray-950">
+      <div className="flex flex-row-reverse w-full gap-2">
+        {links.map((link) => {
+          return (
+            <SocialMediaLink
+              key={link.name}
+              icon={link.icon}
+              path={link.path}
+              tooltip={<LinkTooltip name={link.name} />}
+              delay={300}
+            />
+          );
+        })}
+      </div>
+
       <div className="flex flex-col">
         <div className="cursor-default transition origin-bottom ease-in-out duration-500 hover:scale-105">
           <h1 className="text-5xl font-bold">

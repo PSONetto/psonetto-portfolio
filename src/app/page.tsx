@@ -1,10 +1,11 @@
-import PresentationSection from './PresentationSection';
+import PresentationSection from './components/presentation/PresentationSection';
+import ProjectsSection from './components/projects/ProjectsSection';
 
 export default function Home() {
   return (
-    <main className="grid grid-cols-12 min-h-screen items-center justify-between px-12 py-24">
-      <PresentationSection></PresentationSection>
-      <div className="cols-span-5 p-6">Projects</div>
+    <main className="flex flex-col md:flex-none md:grid md:grid-cols-12 min-h-screen items-center justify-between p-0">
+      <PresentationSection />
+      <ProjectsSection />
     </main>
   );
 }
