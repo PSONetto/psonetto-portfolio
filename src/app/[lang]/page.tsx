@@ -1,11 +1,13 @@
+import { Params } from 'next/dist/shared/lib/router/utils/route-matcher';
+
 import PresentationSection from './components/presentation/PresentationSection';
 import ProjectsSection from './components/projects/ProjectsSection';
 
-export default function Home() {
+export default function Home({ params }: Params) {
   return (
     <main className="flex flex-col md:flex-none md:grid md:grid-cols-12 min-h-screen items-center justify-between p-0">
-      <PresentationSection />
-      <ProjectsSection />
+      <PresentationSection params={params} />
+      <ProjectsSection params={params} />
     </main>
   );
 }

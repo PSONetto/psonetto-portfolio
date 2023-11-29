@@ -12,11 +12,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: any;
 }) {
   return (
-    <html lang="en">
+    <html lang={params.lang}>
       <body className={playfair.className}>{children}</body>
     </html>
   );

@@ -1,0 +1,16 @@
+{
+  "presentation": {
+    "name": "Plínio Netto",
+    "subTitle": "Desenvolvedor Web Fullstack",
+    "description": "Bem-vindo ao meu universo digital!<br />Meu nome é <i>Plínio Netto</i>, sou um <i>desenvolvedor web full-stack</i> localizado no Brasil, especializado em <i>React.js, Node.js e Next.js</i>. Com paixão por criar experiências web fluidas, eu reúno inovação e expertise. Explore meu portfólio, onde eu apresento <i>soluções sofisticadas</i> combinadas com <i>total responsividade</i> e cuidado especial com <i>acessibilidade</i> e <i>experiência do usuário</i>!"
+  },
+  "projects": {
+    "title": "Projetos Mais Recentes",
+    "visit": "Visitar",
+    "content": {
+      "homework-lp": {
+        "title": "[Site Institucional] Lição de Casa"
+      }
+    }
+  }
+}

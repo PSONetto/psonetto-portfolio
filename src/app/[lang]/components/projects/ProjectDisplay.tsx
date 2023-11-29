@@ -8,12 +8,14 @@ export interface IProjectDisplayProps {
   name: string;
   path: string;
   techs: string[];
+  lang: any;
 }
 
 export default function ProjectDisplay({
   name,
   path,
   techs,
+  lang,
 }: IProjectDisplayProps) {
   return (
     <div className="flex flex-col gap-3 items-center justify-center">
@@ -22,7 +24,7 @@ export default function ProjectDisplay({
         target="_blank"
         className="flex items-center justify-center gap-2 text-lg transition ease-in-out duration-500 hover:scale-105"
       >
-        <span>Visit</span>
+        <span>{lang.visit}</span>
         <FaExternalLinkAlt />
       </a>
 
