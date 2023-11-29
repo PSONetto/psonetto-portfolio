@@ -5,7 +5,7 @@ import Accordion, {
 } from '@/components/content/accordion/Accordion';
 import Separator from '@/components/content/separator/Separator';
 
-import { getDictionary } from '../../../../../dictionaries/getDictionary';
+import { getDictionary } from '../../../../getDictionary';
 import ProjectDisplay from './ProjectDisplay';
 
 export default async function ProjectsSection({ params }: Params) {

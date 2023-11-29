@@ -4,7 +4,8 @@ import { Params } from 'next/dist/shared/lib/router/utils/route-matcher';
 
 import Separator from '@/components/content/separator/Separator';
 
-import { getDictionary } from '../../../../../dictionaries/getDictionary';
+import { getDictionary } from '../../../../getDictionary';
+import LangToggle from './LangToggle';
 import LinkTooltip from './LinkTooltip';
 import SocialMediaLink from './SocialMediaLink';
 
@@ -34,18 +35,21 @@ export default async function PresentationSection({ params }: Params) {
 
   return (
     <section className="md:col-span-7 md:p-12 p-6 h-full flex flex-col gap-28 bg-gradient-to-tr from-black to-gray-950">
-      <div className="flex flex-row-reverse w-full gap-2">
-        {links.map((link) => {
-          return (
-            <SocialMediaLink
-              key={link.name}
-              icon={link.icon}
-              path={link.path}
-              tooltip={<LinkTooltip name={link.name} />}
-              delay={300}
-            />
-          );
-        })}
+      <div className="flex items-center justify-between w-full">
+        <LangToggle lang={params.lang} />
+        <div className="flex items-center justify-center gap-2">
+          {links.map((link) => {
+            return (
+              <SocialMediaLink
+                key={link.name}
+                icon={link.icon}
+                path={link.path}
+                tooltip={<LinkTooltip name={link.name} />}
+                delay={300}
+              />
+            );
+          })}
+        </div>
       </div>
 
       <div className="flex flex-col">
