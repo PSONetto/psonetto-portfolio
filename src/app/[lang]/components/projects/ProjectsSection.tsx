@@ -13,7 +13,7 @@ export default async function ProjectsSection({ params }: Params) {
 
   const accordionItems: IAccordionItems[] = [
     {
-      title: lang.projects.content['homework-lp'].title,
+      title: 'Homework',
       content: (
         <ProjectDisplay
           name="homework-lp"

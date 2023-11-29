@@ -6,11 +6,6 @@
   },
   "projects": {
     "title": "Projetos Mais Recentes",
-    "visit": "Visitar",
-    "content": {
-      "homework-lp": {
-        "title": "[Site Institucional] Lição de Casa"
-      }
-    }
+    "visit": "Visitar"
   }
 }

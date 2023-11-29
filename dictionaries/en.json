@@ -2,15 +2,10 @@
   "presentation": {
     "name": "Plinio Netto",
     "subTitle": "Fullstack Web Developer",
-    "description": "Welcome to my digital realm!<br />I&apos;m <i>Plinio Netto</i>, a <i>full-stack web developer</i>based in Brazil, specialized in <i>React.js, Node.js and Next.js</i>. With a passion for crafting seamless web experiences, I bring together innovation and expertise. Explore my portfolio, where I expose <i>fancy solutions</i> combined with <i>full responsiveness</i> and special care for <i>accessibility</i> and <i>user experience</i>!"
+    "description": "Welcome to my digital realm!<br />I&apos;m <i>Plinio Netto</i>, a <i>full-stack web developer </i>based in Brazil, specialized in <i>React.js, Node.js and Next.js</i>. With a passion for crafting seamless web experiences, I bring together innovation and expertise. Explore my portfolio, where I expose <i>fancy solutions</i> combined with <i>full responsiveness</i> and special care for <i>accessibility</i> and <i>user experience</i>!"
   },
   "projects": {
     "title": "Most Recent Projects",
-    "visit": "Visit",
-    "content": {
-      "homework-lp": {
-        "title": "[Institutional Website] Homework"
-      }
-    }
+    "visit": "Visit"
   }
 }
