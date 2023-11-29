@@ -39,7 +39,8 @@ export default function Accordion({ items }: IAccordionProps) {
           </div>
 
           <div
-            className={`p-4 transition-all duration-500 ease-in-out ${
+            id="content"
+            className={`p-4 transition-all duration-500 ease-in-out overflow-hidden ${
               activeIndex === index
                 ? 'max-h-96 opacity-100'
                 : 'max-h-0 p-0 opacity-0'

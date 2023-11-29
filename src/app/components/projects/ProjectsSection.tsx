@@ -3,15 +3,19 @@ import Accordion, {
 } from '@/components/content/accordion/Accordion';
 import Separator from '@/components/content/separator/Separator';
 
+import ProjectDisplay from './ProjectDisplay';
+
 export default function ProjectsSection() {
   const accordionItems: IAccordionItems[] = [
     {
       title: 'Homework Institutional Website',
-      content: <span>Test</span>,
-    },
-    {
-      title: 'Majordomus Task Manager',
-      content: <span>Test</span>,
+      content: (
+        <ProjectDisplay
+          name="homework-lp"
+          path="https://homework-lp.vercel.app/"
+          techs={['Next.js', 'TypeScript', 'TailwindCSS', 'React Aria']}
+        />
+      ),
     },
   ];
 

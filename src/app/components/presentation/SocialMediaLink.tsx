@@ -28,6 +28,7 @@ export default function SocialMediaLink(props: ISocialMediaLinkProps) {
       >
         {props.icon}
       </a>
+
       {state.isOpen && (
         <Tooltip state={state} {...tooltipProps}>
           {props.tooltip}
