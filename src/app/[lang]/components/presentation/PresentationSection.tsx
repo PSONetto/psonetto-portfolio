@@ -1,7 +1,5 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
-import { Params } from 'next/dist/shared/lib/router/utils/route-matcher';
-
 import Separator from '@/components/content/separator/Separator';
 
 import { getDictionary } from '../../../../getDictionary';
@@ -15,7 +13,7 @@ export interface ISocialMediaLink {
   name: string;
 }
 
-export default async function PresentationSection({ params }: Params) {
+export default async function PresentationSection({ params }: any) {
   const lang = await getDictionary(params.lang);
 
   const links: ISocialMediaLink[] = [

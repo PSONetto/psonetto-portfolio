@@ -1,5 +1,3 @@
-import { Params } from 'next/dist/shared/lib/router/utils/route-matcher';
-
 import Accordion, {
   IAccordionItems,
 } from '@/components/content/accordion/Accordion';
@@ -8,7 +6,7 @@ import Separator from '@/components/content/separator/Separator';
 import { getDictionary } from '../../../../getDictionary';
 import ProjectDisplay from './ProjectDisplay';
 
-export default async function ProjectsSection({ params }: Params) {
+export default async function ProjectsSection({ params }: any) {
   const lang = await getDictionary(params.lang);
 
   const accordionItems: IAccordionItems[] = [
