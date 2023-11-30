@@ -40,7 +40,6 @@ export default async function PresentationSection({ params }: any) {
             return (
               <SocialMediaLink
                 key={link.name}
-                name={link.name}
                 icon={link.icon}
                 path={link.path}
                 tooltip={<LinkTooltip name={link.name} />}

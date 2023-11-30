@@ -7,7 +7,6 @@ import { useTooltipTriggerState } from 'react-stately';
 import Tooltip from '@/components/overlay/tooltip/Tooltip';
 
 export interface ISocialMediaLinkProps extends TooltipTriggerProps {
-  name: string;
   path: string;
   icon: React.ReactNode;
   tooltip: React.ReactNode;
@@ -26,7 +25,6 @@ export default function SocialMediaLink(props: ISocialMediaLinkProps) {
         href={props.path}
         target="_blank"
         className="text-3xl"
-        aria-label={props.name}
       >
         {props.icon}
       </a>
