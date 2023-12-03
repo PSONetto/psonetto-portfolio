@@ -8,7 +8,7 @@ export default function Separator(props: SeparatorProps) {
   return (
     <div
       {...separatorProps}
-      className={`bg-gray-800 dark:bg-gray-300 ${
+      className={`bg-gray-300 ${
         props.orientation === 'vertical'
           ? 'w-[1px] h-full mx-2'
           : 'w-full h-[1px] my-2'
